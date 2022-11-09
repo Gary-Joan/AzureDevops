@@ -36,8 +36,6 @@ jobs:
     - name: Test Reporter
       uses: dorny/test-reporter@v1.6.0
       with:
-        # Name of the check run
-          name: Test Execution 
-          path: "**/surefire-reports/TEST-*.xml"
-        # The fast-glob library that is internally used interprets backslashes as escape characters
-          reporter: java-junit
+        name: Test Execution 
+        path: "**/surefire-reports/TEST-*.xml"
+        reporter: java-junit
